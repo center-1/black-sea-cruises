@@ -1,2 +1,5 @@
-# black-sea-cruises
-адаптивный макет «Круизы по Черному морю»
+# Адаптивный макет «Круизы по Чёрному морю»
+
+Макет
+
+<img width="300" height="900" alt="" src="layout_cruises_full.png">
