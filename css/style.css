@@ -1,0 +1,52 @@
+body {
+/*
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto Slab', serif;
+*/
+  background: #f3f3f3 url("../img/header_bg.png") no-repeat top center fixed;
+  background-size: 1674px 648px;
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+}
+.reset-list {
+  margin: 0;
+  padding: 0;
+}
+.main-header {
+  display: flex;
+  padding-top: 35px;
+}
+.main-menu ul {
+  box-sizing: border-box;
+  padding: 75px 45px;
+  width: 420px;
+  background-color: #0d3351;
+  list-style: none;
+}
+.main-menu a {
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 48px;
+  color: #ffffff;
+  letter-spacing: 0.9px;
+  text-decoration: none;
+}
+.user-menu {
+  display: flex;
+  list-style: none;
+}
+.user-menu ul {
+  list-style: none;
+}
+.user-menu li {
+  margin-right: 20px;
+}
+.user-info p {
+  margin: 0;
+}
+
+
