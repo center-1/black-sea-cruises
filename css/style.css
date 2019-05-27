@@ -19,6 +19,35 @@ body {
   display: flex;
   padding-top: 35px;
 }
+
+
+.main-burger {
+  position: relative;
+  width: 12px;
+  height: 10px;
+margin-right: 10px;
+cursor: pointer;
+}
+.burger-line {
+  position: absolute;
+  left: 0;
+  width: 14px;
+  height: 2px;
+  background-color: black;
+}
+.burger-line-1 {
+  top: 0;
+}
+.burger-line-2 {
+  top: 4px;
+}
+.burger-line-1 {
+  top: 8px;
+}
+
+
+
+
 .main-menu ul {
   box-sizing: border-box;
   padding: 75px 45px;
