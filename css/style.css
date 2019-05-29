@@ -18,37 +18,39 @@ body {
 .main-header {
   display: flex;
   padding-top: 35px;
+  padding-left: 59px;
 }
 
 
 .main-burger {
   position: relative;
-  width: 12px;
-  height: 10px;
-margin-right: 10px;
-cursor: pointer;
+  width: 22px;
+  height: 13px;
+  margin-right: 10px;
+  cursor: pointer;
 }
 .burger-line {
   position: absolute;
   left: 0;
-  width: 14px;
+  width: 22px;
   height: 2px;
   background-color: black;
 }
 .burger-line-1 {
-  top: 0;
+  top: 13px;
 }
 .burger-line-2 {
-  top: 4px;
+  top: 6px;
 }
-.burger-line-1 {
-  top: 8px;
+.burger-line-3 {
+  top: -1px;
 }
 
 
 
 
 .main-menu ul {
+  display: none;
   box-sizing: border-box;
   padding: 75px 45px;
   width: 420px;
