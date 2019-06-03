@@ -17,6 +17,8 @@ body {
 }
 .main-header {
   display: flex;
+/*  align-items: center; */
+  justify-content: space-between;
   padding-top: 35px;
   padding-left: 59px;
 }
@@ -79,5 +81,9 @@ body {
 .user-info p {
   margin: 0;
 }
-
+.personal-area,
+.currency,
+.language {
+  display: none;
+}
 
