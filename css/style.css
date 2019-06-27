@@ -9,7 +9,6 @@ body {
 .container {
 	width: 1200px;
 	margin: 0 auto;
-	padding: 0;
 }
 .reset-list {
   margin: 0;
@@ -17,19 +16,18 @@ body {
 }
 .main-header {
   display: flex;
-/*  align-items: center; */
+  align-items: center;
   justify-content: space-between;
-  padding-top: 35px;
-  padding-left: 59px;
+  padding-top: 20px;
 }
-
-
+.menu {
+  margin-left: 28px;
+}
 .main-burger {
   position: relative;
   width: 22px;
   height: 13px;
-  margin-right: 10px;
-  cursor: pointer;
+  margin-left: 10px;
 }
 .burger-line {
   position: absolute;
@@ -47,9 +45,6 @@ body {
 .burger-line-3 {
   top: -1px;
 }
-
-
-
 .main-menu ul {
   display: none;
   box-sizing: border-box;
@@ -57,6 +52,9 @@ body {
   width: 420px;
   background-color: #0d3351;
   list-style: none;
+}
+.user-block {
+  margin-right: 21px;
 }
 .main-menu a {
   font-family: 'Roboto Slab', serif;
@@ -73,7 +71,7 @@ body {
   list-style: none;
 }
 .user-menu a {
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 48px;
@@ -81,11 +79,9 @@ body {
   color: #0d3351;
   text-decoration: none;
 }
-
 .user-menu a:not(:last-child) {
   padding-left: 15px;
 }
-
 .user-menu ul {
   list-style: none;
 }
@@ -96,45 +92,35 @@ body {
 .user-info {
   width: 130px;
 }
-
 .user-info .phone {
-  font-family: Raleway;
   font-size: 14px;
   font-weight: 700;
- /* line-height: 48px; */
-  letter-spacing: 0.7px;
+  line-height: 20px;
 }
-
 .user-info p {
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 10px;
   font-weight: 400;
-/*  line-height: 48px; */
+  line-height: 12px; 
   letter-spacing: 0.5px;
   margin: 0;
-  padding: 0;
 }
 .personal-area-list,
 .currency-list,
 .language-list {
   display: none;
 }
-
 .personal-area,
 .currency,
 .language {
   position: relative;
 }
-
-
 .personal-area {
   background: url("../img/user.svg") no-repeat 0 2px;
 }
 .currency {
   background: url("../img/ruble.svg") no-repeat 0 2px;
 }
-
-
 .personal-area::after,
 .currency::after,
 .language::after {
@@ -142,8 +128,39 @@ body {
   position: absolute;
   top: 7px;
   right: -15px;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
   border-top: 5px solid #000;
 }
-
+.wrapper {
+  text-align: center;
+}
+h1 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 1.8px;
+  color: #0d3351;
+  margin: 30px 0px;
+}
+h1 span {
+  font-size: 100px;
+  line-height: 120px;
+  text-transform: uppercase;
+  letter-spacing: -2.5px;  
+}
+.button {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0.7px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #33c7fd;
+  padding: 15px 50px;
+}
+.button:focus {
+  outline: 2px solid #3254ff;
+}
