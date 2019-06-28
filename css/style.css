@@ -63,6 +63,7 @@ body {
   margin-right: 21px;
 }
 .main-menu a {
+  display: block;
   font-family: 'Roboto Slab', serif;
   font-size: 18px;
   font-weight: 400;
@@ -92,6 +93,7 @@ body {
   list-style: none;
 }
 .user-menu li:not(:last-child) {
+  position: relative;
   margin-right: 53px;
 }
 .user-menu li:nth-child(2) {
@@ -118,6 +120,18 @@ body {
 .language-list {
   display: none;
 }
+.personal-area-list {
+  position: absolute;
+  left: 45px;
+}
+.currency-list {
+  position: absolute;
+  left: 17px;
+}
+.language-list {
+  position: absolute;
+  left: 15px;
+}
 .personal-area,
 .currency,
 .language {
@@ -142,12 +156,13 @@ body {
 }
 .wrapper {
   text-align: center;
+  margin-bottom: 320px;
 }
 .logo {
   margin-top: 15px;
   margin-right: 4px;
 }
-h1 {
+.wrapper-title {
   font-family: 'Roboto Slab', serif;
   font-size: 36px;
   font-weight: 400;
@@ -156,7 +171,7 @@ h1 {
   color: #0d3351;
   margin: 2px 0px 15px;
 }
-h1 span {
+.wrapper-title span {
   font-size: 100px;
   line-height: 161px;
   text-transform: uppercase;
@@ -186,5 +201,39 @@ h1 span {
   height: 298px;
   background: url("../img/curve_line.png") no-repeat;
 }
-
+.price-header {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+.price-subtitle {
+  font-family: 'Roboto Slab', serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 1.8px;
+  color: #0d3351;
+}
+.price-sorting {
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+  color: #0d3351;
+  text-decoration: none;
+}
+.price-sorting span {
+  font-style: italic;
+}
+.price-sorting::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: -15px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid #000;
+}
 
