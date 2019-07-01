@@ -3,7 +3,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-family: 'Roboto Slab', serif;
 */
-  background: #f3f3f3 url("../img/header_bg.png") no-repeat top center fixed;
+  background: #f3f3f3 url("../img/header_bg.png") no-repeat top center;
   background-size: 1674px 648px;
 }
 .container {
@@ -204,6 +204,7 @@ body {
 .price-header {
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 20px;
   text-align: center;
 }
 .price-subtitle {
@@ -235,5 +236,61 @@ body {
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
   border-top: 5px solid #000;
+}
+.price-item {
+  width: 555px;
+  background-color: #fff;
+}
+.price-wrapper {
+  margin-left: 30px;
+}
+.price-link {
+  position: relative;
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0.9px;
+  color: #00a2dd;
+  text-decoration: none;
+}
+.price-link::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: -17px;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 5px solid #33c7fd;
+}
+.price-description {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #0d3351;
+  letter-spacing: 0.7px;
+}
+.price-description strong {
+  font-weight: bold;
+}
+.price-product {
+  font-family: 'Roboto Slab', serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 48px;
+  color: #0d3351;
+  letter-spacing: 1.5px;
+}
+
+
+.hit-item {
+
+}
+.stock-item {
+
+}
+.discount-item {
+
 }
 
