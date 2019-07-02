@@ -238,6 +238,7 @@ body {
   border-top: 5px solid #000;
 }
 .price-item {
+  position: relative;
   width: 555px;
   background-color: #fff;
 }
@@ -282,11 +283,21 @@ body {
   color: #0d3351;
   letter-spacing: 1.5px;
 }
-
-
 .hit-item {
-
+  position: absolute;
+  top: -50px;
+  right: -40px;
 }
+.hit-item-text {
+  fill: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
 .stock-item {
 
 }
