@@ -154,15 +154,15 @@ body {
   border-right: 4px solid transparent;
   border-top: 5px solid #000;
 }
-.wrapper {
+.page-wrapper {
   text-align: center;
-  margin-bottom: 320px;
+  margin-bottom: 303px;
 }
 .logo {
   margin-top: 15px;
   margin-right: 4px;
 }
-.wrapper-title {
+.page-title {
   font-family: 'Roboto Slab', serif;
   font-size: 36px;
   font-weight: 400;
@@ -171,7 +171,7 @@ body {
   color: #0d3351;
   margin: 2px 0px 15px;
 }
-.wrapper-title span {
+.page-title span {
   font-size: 100px;
   line-height: 161px;
   text-transform: uppercase;
@@ -204,8 +204,13 @@ body {
 .price-header {
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 20px;
+  margin-bottom: 38px;
   text-align: center;
+}
+.price-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 28px;
 }
 .price-subtitle {
   font-family: 'Roboto Slab', serif;
@@ -214,6 +219,7 @@ body {
   line-height: 48px;
   letter-spacing: 1.8px;
   color: #0d3351;
+  margin: 3px;
 }
 .price-sorting {
   position: relative;
@@ -232,7 +238,7 @@ body {
   content: "";
   position: absolute;
   top: 7px;
-  right: -15px;
+  right: -19px;
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
   border-top: 5px solid #000;
@@ -240,9 +246,11 @@ body {
 .price-item {
   position: relative;
   width: 555px;
+  margin-right: 30px;
+  margin-bottom: 10px;
   background-color: #fff;
 }
-.price-wrapper {
+.price-inner {
   margin-left: 30px;
 }
 .price-link {
@@ -285,8 +293,8 @@ body {
 }
 .hit-item {
   position: absolute;
-  top: -50px;
-  right: -40px;
+  top: -39px;
+  right: -36px;
 }
 .hit-item-text {
   fill: #fff;

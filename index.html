@@ -57,9 +57,9 @@
     <main>
       <div class="container">
 
-        <div class="wrapper">
+        <div class="page-wrapper">
           <img src="img/logo.png" class="logo" alt="Морские прогулки" title="Морские прогулки" width="88" height="88">
-          <h1 class="wrapper-title">Морские прогулки<br>
+          <h1 class="page-title">Морские прогулки<br>
             <span>по чёрному морю</span>
           </h1>
           <a class="button" href="#choose_cruise">Выбрать круиз</a>  
@@ -70,31 +70,99 @@
             <a href="#sorting" class="price-sorting">Сортировать круизы по <span>цене</span></a>
           </div>
 
-          <article class="price-item">
-            <img src="img/cruise_Anapa.jpg" width="555" height="437" alt="Морской круиз в Анапу">
-            <div class="price-wrapper">
-              <a href="#cruise_Anapa" class="price-link">Морской круиз в Анапу</a>
-              <p class="price-description">
-                <strong>Маршрут: </strong>Сочи-Лазаревское-Геленджик-Анапа
-              </p>
-              <p class="price-description">
-                <strong>Продолжительность: </strong>10 ч. 0 мин.
-              </p>
-              <p class="price-product">49 000 руб.</p>
-            </div>
-            <svg class="hit-item" width="200" height="135">
-              <polygon points="30,135 30,40 125,40 125,135 75,110"
-             fill="#33c7fd" />
-             <text x="65" y="80" class="hit-item-text">Хит</text>
-             <text x="50" y="100" class="hit-item-text">продаж</text>
-            </svg>
-          </article>
+          <div class="price-wrapper">
 
-          <article class="price-item stock-item"></article>
-          <article class="price-item discount-item"></article>
+            <article class="price-item">
+              <img src="img/cruise_Anapa.jpg" width="555" height="437" alt="Морской круиз в Анапу">
+              <div class="price-inner">
+                <a href="#cruise_Anapa" class="price-link">Морской круиз в Анапу</a>
+                <p class="price-description">
+                  <strong>Маршрут: </strong>Сочи-Лазаревское-Геленджик-Анапа
+                </p>
+                <p class="price-description">
+                  <strong>Продолжительность: </strong>10 ч. 0 мин.
+                </p>
+                <p class="price-product">49 000 руб.</p>
+              </div>
+              <svg class="hit-item" width="200" height="135">
+                <polygon points="30,133 30,32 119,32 119,133 75,114"
+               fill="#33c7fd" />
+               <text x="60" y="72" class="hit-item-text">Хит</text>
+               <text x="42" y="90" class="hit-item-text">продаж</text>
+              </svg>
+            </article>
 
-          <article class="price-item"></article>
-          <article class="price-item"></article>
+            <article class="price-item">
+              <img src="img/sea_excursion.jpg" width="555" height="113" alt="Обзорная морская прогулка с экскурсией">
+              <div class="price-inner">
+                <a href="#sea_excursion" class="price-link">Обзорная морская прогулка с экскурсией</a>
+                <p class="price-description">
+                  <strong>Маршрут: </strong>Сочи-Адлер-Сочи (без высадки)
+                </p>
+                <p class="price-description">
+                  <strong>Продолжительность: </strong>1 ч. 0 мин.
+                </p>
+                <p class="price-product">5 000 руб.<span>15000 руб.</span></p>
+              </div>
+              <svg class="hit-item" width="200" height="135">
+                <polygon points="30,133 30,32 119,32 119,133 75,114"
+               fill="red" />
+               <text x="50" y="82" class="hit-item-text">Акция</text>
+              </svg>
+            </article>
+
+            <article class="price-item">
+              <img src="img/sea_Gelengik.jpg" width="555" height="113" alt="Морская прогулка в Геленжик">
+              <div class="price-inner">
+                <a href="#sea_Gelengik" class="price-link">Морская прогулка в Геленжик</a>
+                <p class="price-description">
+                  <strong>Маршрут: </strong>Сочи-Туапсе-Геленжик
+                </p>
+                <p class="price-description">
+                  <strong>Продолжительность: </strong>12 ч. 30 мин.
+                </p>
+                <p class="price-product">7 000 руб.<span>10000 руб.</span></p>
+              </div>
+              <svg class="hit-item" width="200" height="135">
+                <polygon points="30,133 30,32 119,32 119,133 75,114"
+               fill="red" />
+               <text x="45" y="72" class="hit-item-text">Скидка</text>
+               <text x="60" y="90" class="hit-item-text">10%</text>
+              </svg>
+            </article>
+
+  <!--      <article class="price-item stock-item"></article>
+            <article class="price-item discount-item"></article> -->
+
+            <article class="price-item">
+              <img src="img/cruise_Novorossiysk.jpg" width="555" height="215" alt="Морской круиз в Новороссийск">
+              <div class="price-inner">
+                <a href="#cruise_Novorossiysk" class="price-link">Морской круиз в Новороссийск</a>
+                <p class="price-description">
+                  <strong>Маршрут: </strong>Сочи-Геленжик-Новороссийск-Геленжик-Сочи
+                </p>
+                <p class="price-description">
+                  <strong>Продолжительность: </strong>13 ч. 30 мин.
+                </p>
+                <p class="price-product">14 800 руб.</p>
+              </div>
+            </article>
+
+            <article class="price-item">
+              <img src="img/sea_Abrau_Durso.jpg" width="555" height="215" alt="Морская прогулка в Абрау-Дюрсо">
+              <div class="price-inner">
+                <a href="#sea_Abrau_Durso" class="price-link">Морская прогулка в Абрау-Дюрсо</a>
+                <p class="price-description">
+                  <strong>Маршрут: </strong>Сочи-Абрау-Дюрсо
+                </p>
+                <p class="price-description">
+                  <strong>Продолжительность: </strong>11 ч. 0 мин.
+                </p>
+                <p class="price-product">14 800 руб.</p>
+              </div>
+            </article>
+          </div>
+
         </div>
         
       </div>
