@@ -188,7 +188,7 @@ body {
 .button:focus {
   outline: 2px solid #3254ff;
 }
-.button::after {
+.dotted-line::after {
   content: "";
   position: absolute;
   top: 65px;
@@ -207,6 +207,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-left: 28px;
+  margin-bottom: 70px;
 }
 .price-subtitle {
   font-family: 'Roboto Slab', serif;
@@ -293,15 +294,18 @@ body {
   color: #0d3351;
   letter-spacing: 1.5px;
 }
-
 .price-product span {
   position: relative;
-  left: 18px;
-  font-size: 14px;
-
-/*    ?? зачеркивание */
+  top: -1px;
+  left: 32px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 48px;
+  text-decoration: line-through;
+  letter-spacing: 0.9px;
+  opacity: 0.55;
+  color: #0d3351;
 }
-
 .hit-item {
   position: absolute;
   top: -39px;
@@ -316,11 +320,80 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.7px;
 }
-
-.stock-item {
-
+.button-price {
+  margin-top: 6px;
+  margin-left: 469px;
+  padding: 0 50px 0 40px;
 }
-.discount-item {
-
+.button-price::after {
+  content: "";
+  position: absolute;
+  top: 22px;
+  right: 28px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid #fff;
+}
+footer {
+  background-color: #fff;
+}
+.main-footer {
+  display: flex;
+}
+.footer-info {
+  margin-right: 120px;
+}
+.info-list {
+  list-style: none;
+}
+.info-link {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+  color: #0d3351;
+  text-decoration: none;
+}
+.footer-social p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+  color: #0d3351;
+}
+.social-list {
+  display: flex;
+  list-style: none;
+}
+.social-link {
+  margin-right: 15px;
+}
+.footer-contacts {
+  margin-left: auto;
+}
+.footer-phone {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0.7px;
+  color: #0d3351;
+  text-decoration: none;
+}
+.footer-contacts p {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0.5px;
+  color: #0d3351;
+}
+.footer-contacts .copyright {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.7px;
 }
 
