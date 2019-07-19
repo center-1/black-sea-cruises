@@ -404,3 +404,43 @@ footer {
   letter-spacing: 0.7px;
 }
 
+
+/* адаптивность картинок ? */
+
+@media screen and (max-width: 1300px) {
+  .container {
+    width: 900px;
+  }
+  .price-item {
+    width: 350px;
+  }
+  .price-item img {
+    width: 350px;
+    height: auto;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .price-wrapper {
+    flex-direction: column;
+  }
+  .container {
+    width: 800px;
+  }
+  .price-item {
+    width: 250px;
+  }
+  .price-item img {
+    width: 250px;
+    height: auto;
+  }
+}
+
+/*  правки... 
+div у article нужно убрать?
+последний article можно display none
+и потом по клику "больше крузиов" показывать 5й круиз! 
+так же фото подгрузить меньшего размера!*/
+
+
