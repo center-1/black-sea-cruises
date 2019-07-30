@@ -167,7 +167,7 @@ body {
   color: #0d3351;
   margin: 2px 0px 15px;
 }
-.page-title span {
+.page-title-desc {
   font-size: 100px;
   line-height: 161px;
   text-transform: uppercase;
@@ -406,10 +406,22 @@ footer {
 
 
 /* адаптивность картинок ? */
-
+/* планшет */
 @media screen and (max-width: 1300px) {
   .container {
-    width: 900px;
+    width: 800px;
+  }
+  .main-burger {
+    margin-left: 48px;
+  }
+  .page-title {
+    font-size: 26px;
+    letter-spacing: 1.3px;
+  }
+  .page-title-desc {
+    font-size: 72px;
+    letter-spacing: -1.8px;
+    line-height: 48px;
   }
   .price-item {
     width: 350px;
@@ -420,13 +432,13 @@ footer {
   }
 }
 
-
-@media screen and (max-width: 900px) {
+/* мобилка */
+@media screen and (max-width: 320px) {
   .price-wrapper {
     flex-direction: column;
   }
   .container {
-    width: 800px;
+    width: 400px;
   }
   .price-item {
     width: 250px;

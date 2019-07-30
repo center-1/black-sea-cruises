@@ -58,9 +58,12 @@
     <main>
       <div class="container">
         <div class="page-wrapper">
-          <img src="img/logo.png" class="logo" alt="Морские прогулки" title="Морские прогулки" width="88" height="88">
+          <picture>
+            <source media="(max-width: 1300px)" srcset="img/logo_small.png">
+            <img src="img/logo.png" class="logo" alt="Морские прогулки" title="Морские прогулки">
+          </picture>
           <h1 class="page-title">Морские прогулки<br>
-            <span>по чёрному морю</span>
+            <span class="page-title-desc">по чёрному морю</span>
           </h1>
           <a class="button dotted-line" href="#choose_cruise">Выбрать круиз</a>
         </div>
