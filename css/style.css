@@ -1,5 +1,5 @@
 body {
-  background: #f3f3f3 url("../img/header_bg.png") no-repeat top center;
+  background: #f3f3f3 url("../img/bg_full.png") no-repeat top center;
   background-size: 1674px 648px;
 }
 .container {
@@ -404,17 +404,25 @@ footer {
   letter-spacing: 0.7px;
 }
 
-
-/* адаптивность картинок ? */
-/* планшет */
+/* tablet */
 @media screen and (max-width: 1300px) {
+  body {
+    background: #f3f3f3 url("../img/bg_tab.png") no-repeat top center;
+/*    background-size: 1674px 648px;*/
+  }
   .container {
     width: 800px;
   }
   .main-burger {
     margin-left: 48px;
   }
+  .logo {
+    margin-top: 73px;
+    margin-right: -16px;
+  }
   .page-title {
+    margin: -11px 0px 2px 15px;
+    line-height: 63px;
     font-size: 26px;
     letter-spacing: 1.3px;
   }
@@ -423,6 +431,23 @@ footer {
     letter-spacing: -1.8px;
     line-height: 48px;
   }
+  .button {
+    margin-left: 15px;
+  }
+
+
+  .dotted-line::after {
+/*    content: "";
+    position: absolute;
+    top: 65px;
+    right: 78px;
+    width: 48px;
+    height: 222px;*/
+    background: url("../img/curve_line_small.png") no-repeat;
+  }
+
+
+
   .price-item {
     width: 350px;
   }
@@ -432,7 +457,7 @@ footer {
   }
 }
 
-/* мобилка */
+/* mobile */
 @media screen and (max-width: 320px) {
   .price-wrapper {
     flex-direction: column;
