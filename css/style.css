@@ -197,6 +197,9 @@ body {
   height: 298px;
   background: url("../img/curve_line.png") no-repeat;
 }
+.price {
+  margin-bottom: 62px;
+}
 .price-header {
   margin-right: auto;
   margin-left: auto;
@@ -205,9 +208,20 @@ body {
 }
 .price-wrapper {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  height: 1080px;
   margin-left: 28px;
-  margin-bottom: 61px;
+}
+.price-item:nth-child(2), 
+.price-item:nth-child(3) {
+  order: 2;
+}
+.price-item:nth-child(4) {
+  order: 1;
+}
+.price-item:nth-child(5) {
+  order: 4;
 }
 .price-subtitle {
   font-family: 'Roboto Slab', serif;
@@ -244,7 +258,7 @@ body {
   position: relative;
   width: 555px;
   margin-right: 30px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   background-color: #fff;
 }
 .price-inner {
@@ -286,7 +300,7 @@ body {
 }
 .price-product {
   padding-top: 7px;
-  padding-bottom: 28px;
+  padding-bottom: 30px;
   font-family: 'Roboto Slab', serif;
   font-size: 30px;
   font-weight: 400;
@@ -306,6 +320,9 @@ body {
   opacity: 0.55;
   color: #0d3351;
 }
+.product-viewport {
+  padding-bottom: 26px;
+}
 .hit-item {
   position: absolute;
   top: -39px;
@@ -322,8 +339,8 @@ body {
 }
 .button-price {
   margin-top: 9px;
-  margin-left: 469px;
-  padding: 0 50px 0 40px;
+  margin-left: 500px;
+  padding-left: 37px;
 }
 .button-price::after {
   content: "";
@@ -407,7 +424,7 @@ footer {
 /* tablet */
 @media screen and (max-width: 1300px) {
   body {
-    background: #f3f3f3 url("../img/bg_tab.png") no-repeat top center;
+    background: #f3f3f3 url("../img/bg_tab.png") no-repeat -7px -8px;
 /*    background-size: 1674px 648px;*/
   }
   .container {
@@ -434,31 +451,61 @@ footer {
   .button {
     margin-left: 15px;
   }
-
-
   .dotted-line::after {
-/*    content: "";
-    position: absolute;
-    top: 65px;
-    right: 78px;
-    width: 48px;
-    height: 222px;*/
     background: url("../img/curve_line_small.png") no-repeat;
+    top: 71px;
+    right: 74px;
   }
-
-
-
+  .page-wrapper {
+    margin-bottom: 264px;
+  }
+  .price-subtitle {
+    margin-left: 24px;
+    font-size: 26px;
+    letter-spacing: 1.3px;
+    line-height: 33px;
+  }
+  .price-header {
+    margin-bottom: 32px;
+  }
+  .price-wrapper {
+    flex-direction: row;
+    height: auto;
+    margin-left: 49px;
+  }
+  .price-item:nth-child(2),
+  .price-item:nth-child(3),
+  .price-item:nth-child(4),
+  .price-item:nth-child(5) {
+    order: 0;
+  }
+  .price-item:last-child {
+    display: none;
+  }
   .price-item {
-    width: 350px;
+    width: 345px;
   }
   .price-item img {
-    width: 350px;
+    width: 345px;
     height: auto;
+  }
+  .hit-item {
+    right: -50px;
+  }
+
+  .link-tablet {
+    display: inline-block;
+    width: 151px;
+    line-height: 28px;
+  }
+
+  .button-price {
+    margin-left: 300px;
   }
 }
 
 /* mobile */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 520px) {
   .price-wrapper {
     flex-direction: column;
   }
@@ -473,11 +520,3 @@ footer {
     height: auto;
   }
 }
-
-/*  правки... 
-div у article нужно убрать?
-последний article можно display none
-и потом по клику "больше крузиов" показывать 5й круиз! 
-так же фото подгрузить меньшего размера!*/
-
-
