@@ -17,8 +17,3 @@
 
 **Технологии**  
 + html/css/jQuery/JS/git  
-
-
-
-Софт - Avocode/Visual studio code/Sublime text/tinypng/FileOptimizer/svgo  
-Технологии - html/css/jQuery/JS/git  
